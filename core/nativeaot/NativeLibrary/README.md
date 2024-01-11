@@ -61,6 +61,8 @@ The last thing to do is to actually call the method we have imported.
 int result =  MyImport(5,3);
 ```
 
+Please note that on Windows the platform (x86 and x64) must match between the dotnet aot library and the tool used to compile and link the c code; see [here](https://learn.microsoft.com/en-us/cpp/build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line?view=msvc-170) for instructions. 
+
 ## Exporting methods
 
 For a C# method in the native library to be consumable by external programs, it has to be explicitly exported using the `[UnmanagedCallersOnly]` attribute.
