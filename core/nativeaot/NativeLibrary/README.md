@@ -82,7 +82,7 @@ After the native library is built, the above C# `Add` method will be exported as
 * Exported methods cannot use regular C# exception handling, they should return error codes instead.
 
 The sample [source code](Class1.cs) demonstrates common techniques used to stay within these limitations.
-Please note that on Windows the platform (x86 and x64) must match between the dotnet aot library and the tool chain used to compile and link the c code; see [here](https://learn.microsoft.com/en-us/cpp/build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line?view=msvc-170) for x64. 
+Please note that on Windows the platform (x86 and x64) must match between the dotnet aot library and the tool chain used to compile and link the c code; see [here](https://learn.microsoft.com/en-us/cpp/build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line?view=msvc-170) for x64.
 
 ## Building static libraries
 
